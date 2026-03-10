@@ -1,12 +1,40 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
+# PAGE CONFIG
 st.set_page_config(
-    page_title="Manufacturing Intelligence",
-    layout="wide"
+    page_title="Manufacturing Intelligence System",
+    page_icon="🏭",
+    layout="wide",
+     initial_sidebar_state="expanded"
 )
 
+st.title("🏭 Manufacturing Intelligence System")
+
+st.caption(
+"Interactive analytics platform for identifying defect patterns in manufacturing production data."
+)
+with st.sidebar:
+
+    st.header("About")
+
+    st.write(
+    """
+    Manufacturing Intelligence System analyzes production datasets
+    to identify defect patterns across machines, shifts, and tools.
+    """
+    )
+
+    st.header("Capabilities")
+
+    st.write(
+    """
+    • Machine defect analysis  
+    • Shift correlation heatmap  
+    • Tool performance insights  
+    • Production timeline monitoring
+    """
+    )
 # ------------------------------------------------
 # GOOGLE STYLE THEME
 # ------------------------------------------------
@@ -247,3 +275,11 @@ if file:
             """,
             unsafe_allow_html=True
             )
+            
+# Footer  
+         
+st.markdown("---")
+
+st.caption(
+"Manufacturing Intelligence System | Built with Python, Streamlit, and Plotly"
+)          
