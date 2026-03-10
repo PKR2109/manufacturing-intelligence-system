@@ -16,7 +16,7 @@ st.caption(
 )
 with st.sidebar:
 
-    st.header("About")
+    st.subheader("About")
 
     st.write(
     """
@@ -25,7 +25,7 @@ with st.sidebar:
     """
     )
 
-    st.header("Capabilities")
+    st.subheader("Capabilities")
 
     st.write(
     """
@@ -143,8 +143,6 @@ def generate_summary(df):
 # ------------------------------------------------
 # HEADER
 # ------------------------------------------------
-
-st.title("Manufacturing Intelligence")
 
 st.caption("Production monitoring and defect analytics")
 
@@ -275,7 +273,7 @@ if file:
             """,
             unsafe_allow_html=True
             )
-            
+
 # Footer  
          
 st.markdown("---")
